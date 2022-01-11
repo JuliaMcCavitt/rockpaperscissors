@@ -1,7 +1,74 @@
 .row {
+  
   text-align: center;
 }
 .choices {
   display: flex;
   justify-content: space-between;
+}
+.image1{
+  width:500px;
+  border:10px solid black;
+}
+html{
+background-color: 
+}
+
+.titleOne{
+  width:500px;
+    display:flex;
+  margin-left:505px;
+  justify-content:center;  
+   margin-left:545px;
+}
+
+.startButton{
+font-size: 50px;
+font-family:Garamond, serif;
+  margin-left:595px;
+    margin-top:25px;  
+  color:black;
+   width:400px;
+  display:flex;
+  justify-content:center;  
+  text-decoration: none;
+  border:5px solid black;}
+
+  .resetButton{
+    display:flex;
+  justify-content:center; 
+    border:5px solid red;
+      text-decoration: none;
+    color:red;
+    width:50px;
+      margin-left:1460px;
+    margin-top:100px;
+    
+  }
+  
+
+.loadingImage{
+width:500px;
+  height:500px;
+    margin-left:595px;
+    margin-top:25px;  
+   width:400px;
+  display:flex;
+  justify-content:center;  
+}
+.gameRulesImage{
+  margin-left:295px;
+}
+
+.scoreBoardDisplay{
+   display:flex;
+  justify-content:center; 
+   margin-left:85px;
+  width:350px;
+  height:100px;
+    border:5px solid red;
+      text-decoration: none;
+    color:red;
+  font-size: 30px;
+font-family:Garamond, serif;
 }
