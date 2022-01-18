@@ -1,10 +1,112 @@
-.row {
+.square, .titleHub, .rpsIcon{
+  box-sizing:border-box;
+    display:flex;
+  justify-content:space-evenly;
   
-  text-align: center;
+   position: fixed;
+  top: 0;
+  width: 100%;
+  margin-left:-8px;
+	padding-top: .1em;
+	padding-bottom: .50em;
+  z-index: 1;
+  overflow:hidden;
+    height: 70px;
+
+   width: 100%;
+  background-color: black;
 }
+
+.rpsIcon{
+  margin-left:30px;
+  margin-top:20px;
+  width:400px;
+    height:70px;
+    z-index:2;
+}
+
+.squareTwo, .resetButton{
+  position: fixed;
+  box-sizing:border-box;
+    display:flex;
+  justify-content:space-evenly;
+  
+ 
+  bottom: 0;
+  width: 100%;
+  margin-left:-8px;
+	padding-top: .1em;
+	padding-bottom: .50em;
+  overflow:hidden;
+    height: 55px;
+float:left;
+   width: 100%;
+  background-color: black;
+  z-index: 1;
+}
+
+
+
+
+.titleHub{
+  color:white;
+}
+
+body{
+ width: 1500px;
+font-weight: bold;
+  color:black;
+  font-family:monospace,Monaco;
+}
+
+.row {
+  margin-top:70px;
+  text-align: center;
+
+  
+}
+.imgBack{
+  background:url("https://cdn.glitch.global/b3970749-e157-4d4f-91ad-eddc8d69561f/blah.jpg?v=1641961913794");
+  background-repeat: no-repeat;
+  background-size: auto;
+ background-attachment: fixed;
+  background-position: center;
+ background-size: 1500px 600px;
+  
+
+}
+.rps{
+  height:50px;
+  width:100%;
+
+}
+
 .choices {
   display: flex;
   justify-content: space-between;
+  text-align: center;
+  margin-left:150px;
+  margin-top:15px;
+  font-size:25px;
+  font-family:Garamond, serif;
+}
+  
+.computerChoice, .compChoice{
+  margin-right:150px;}
+
+  .compChoice, .usedChoice{
+    
+  margin-top: -35%;
+    background-color:white;
+}
+.usedChoice{
+  margin-top: -95%;
+  background-color:white;
+}
+
+.computerChoice, .userChoice{
+  background-color:white;
+  margin-top:0px;
 }
 .image1{
   width:500px;
@@ -20,6 +122,14 @@ background-color:
   margin-left:505px;
   justify-content:center;  
    margin-left:545px;
+
+}
+
+.psycb{
+    background-color:white;
+  width:330px;
+   justify-content:center;  
+   margin-left:575px;
 }
 
 .startButton{
@@ -40,12 +150,14 @@ font-family:Garamond, serif;
     border:5px solid red;
       text-decoration: none;
     color:red;
-    width:50px;
-      margin-left:1460px;
-    margin-top:100px;
-    
+    width:60px;
+    height:35px;
+      margin-left:1440px;
+    margin-bottom:10px;
+    z-index:2;
+float:right;
   }
-  
+
 
 .loadingImage{
 width:500px;
@@ -60,15 +172,71 @@ width:500px;
   margin-left:295px;
 }
 
-.scoreBoardDisplay{
+.scoreBoard{
+  border:25px solid grey;
+   font-size: 30px;
+  width:470px;
+    margin-left:490px;
+  background-color:rgb(27,27,27);
+}
+
+.headScoreBoard{
+ color:yellow; 
+}
+
+
+.scoreBoardDisplay, .scoreBoardDisplayTwo , .playCom{
    display:flex;
-  justify-content:center; 
-   margin-left:85px;
-  width:350px;
-  height:100px;
-    border:5px solid red;
+  justify-content:space-evenly; 
+   margin-left:-40px;
+  width:550px;
+  height:80px;
+
       text-decoration: none;
-    color:red;
+    color:yellow;
   font-size: 30px;
 font-family:Garamond, serif;
+}
+.playerTitle{
+  
+    display:flex;
+  justify-content:center; 
+   margin-left:20px;
+   font-weight: 900;
+}
+.computerTitle{
+  
+    display:flex;
+  justify-content:center; 
+   margin-left:25px;
+   font-weight: 900;
+}
+.scoreBoardDisplay{
+   display:flex;
+    flex-basis: 100px;
+  flex-direction: row;
+    margin-top:10px;
+   align-items: center;
+  width:240px;
+  height:10px;
+  padding:25px;
+}
+
+.scoreBoardDisplayTwo{
+  display:flex;
+    flex-basis: 100px;
+  flex-direction: row;
+   align-items: center;
+  width:740px;
+  margin-top:-60px;
+  height:10px;
+  padding:25px;
+}
+.result{
+   font-size:25px;
+  font-family:Garamond, serif;
+  align-items: center;
+  margin-left:0%;
+  margin-bottom:100px;
+  padding:25px;
 }

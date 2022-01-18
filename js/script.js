@@ -6,16 +6,16 @@ let computerScore = 0;
 
 $(".play").click(function() {
   let order = $("input").val();
-  $(".userChoice").append("<p>" + order + "</p>");
+  $(".userChoice").prepend("<p>" + order + "</p>");
   let list = Math.random();
   console.log(list);
  
   
-  if (list < 0.33) $(".computerChoice").append("<p>" + "rock" + "</p>");
+  if (list < 0.33) $(".computerChoice").prepend("<p>" + "rock" + "</p>");
   
-  else if (list < 0.66) $(".computerChoice").append("<p>" + "paper" + "</p>");
+  else if (list < 0.66) $(".computerChoice").prepend("<p>" + "paper" + "</p>");
   
-  else if (list > 0.66) $(".computerChoice").append("<p>" + "scissors" + "</p>");
+  else if (list > 0.66) $(".computerChoice").prepend("<p>" + "scissors" + "</p>");
   
 
      if ( order.toLowerCase() === "rock" && list < 0.33) {tie();}
@@ -56,12 +56,9 @@ function tie(){
 }
 
 function scoreboard(){
-  $(".scoreBoardDisplay").text(`Player:${playerScore} | Computer:${computerScore}`);
+  $(".scoreBoardDisplay").text(`${playerScore}`);
+   $(".scoreBoardDisplayTwo").text(`${computerScore}`);
 }
 
-//if (userChoice === "paper" && computerChoice === "rock") {
-// user wins
-//} else if (userChoice === "paper" && computerChoice === "scissors") {
-// computer wins
-//}//
+
 scoreboard()
